@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" /> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Acceuilv2.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <script language="JavaScript" src="script.js"></script>
+        <title>Dau'Link</title>
+    </head>
+    <body>
+
+        <!----------------------------- NAVBAR ----------------------------------->
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\Dau'Link1.png" style="height: auto; width: 35%;"></div>
+            <ul class="nav-links">
+                <!-- NAVIGATION MENU -->
+                <div class="menu">
+                    <li><a href="file:///C:/Users/cheri/Desktop/FAC/Outil%20informatique/Projet/Page_acceuil/Acceuilv2.html">Accueil</a></li>
+                    <li class="droppers">
+                    <a href="/">Annonces</a>
+                    <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Covoiturage</a></li>
+                            <li><a href="/">Collocation</a></li>
+                            <li><a href="/">Sessions d'étude</a></li>
+                            <li><a href="/">Ventes</a></li>
+                        </ul>
+                    </li>
+                    <li class="droppers">
+                    <a href="/">Forum</a>
+                    <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Général</a></li>
+                            <li><a href="/">Covoiturage</a></li>
+                            <li><a href="/">Collocation</a></li>
+                            <li><a href="/">Sessions d'étude</a></li>
+                        </ul>
+                    </li>
+                    <li class="droppers">
+                    <a href="/">Profil</a>
+                    <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="/">Paramètres</a></li>
+                            <li><a href="/">Annonces publiées</a></li>
+                            <li><a href="/">Informations personnelles</a></li>
+                            <li><a href="file:///C:/Users/cheri/Desktop/FAC/Outil%20informatique/Projet/Connection/Connection.html">Déconnexion</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <!--PROFILE SECTION-->
+        <div class="container">
+            <div class="profile-section">
+                <h2 class="myprofile">Mon Profil</h2>
+                <div class="Profil-info">
+                    <p><img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\avatar.png" class="Avatarprofile" style="height:106px;width:106px" alt="Avatar"></p>
+                    <hr class="division">
+                    <p><i class="fa fa-pencil fa-fw"></i> L1 Math</p>
+                    <p><i class="fa fa-home fa-fw"></i> Manar II, Tunis</p>
+                    <p><i class="fa fa-birthday-cake fa-fw"></i> 3 Janvier 2005</p>
+                </div>
+            </div>
+            <!--POSTS SECTION-->
+            <div class="posts-section">
+                <h2>Fil d'actualité</h2>
+                <div class="Add-post">
+                    <h6 class="Timer">Ajouter un poste</h6>
+                    <form action="#" method="POST">
+                      <textarea name="post-content" class="espace-ecriture" placeholder="Entrez votre post ici..."></textarea>
+                      <button type="submit" class="bouton-post"><i class="fa fa-pencil"></i> &nbsp;Post</button>
+                    </form>
+                </div>
+                <div class="Poste"><br>
+                    <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\avatar.png" alt="Avatar" class="Avatar">
+                    <span class="Timer">1 min</span>
+                    <h4>Omar Belhaj</h4><br>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <div class="Partie-image">
+                        <div class="Moitié">
+                          <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\lights.jpg" alt="Image" class="Image-post">
+                        </div>
+                        <div class="Moitié">
+                          <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\nature.jpg" alt="Imagee" class="Image-post">
+                      </div>
+                    </div>
+                    <button type="button" class="bouton"><i class="fa fa-thumbs-up" onclick="like()"></i> &nbsp;Like</button> 
+                    <button type="button" class="bouton"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+                </div>
+                <div class="Poste"><br>
+                    <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\avatar1.png" alt="Avatar" class="Avatar">
+                    <span class="Timer">20 min</span>
+                    <h4>Meryam Belgouthi</h4><br>
+                    <hr>
+                    <p>WOOOOW!!!</p>
+                      <div class="Partie-image">
+                        <div class="Moitié">
+                          <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\nature.jpg" alt="Imagee" class="Image-post">
+                        </div>
+                      </div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button type="button" class="bouton"><i class="fa fa-thumbs-up" onclick="like()"></i> &nbsp;Like</button> 
+                    <button type="button" class="bouton"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+                </div>
+                <div class="Poste"><br>
+                    <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\avatar2.png" alt="Avatar" class="Avatar">
+                    <span class="Timer">30 min</span>
+                    <h4>Moi</h4><br>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button type="button" class="bouton" onclick="like()"><i class="fa fa-thumbs-up"></i> &nbsp;Like</button> 
+                    <button type="button" class="bouton"><i class="fa fa-comment"></i> &nbsp;Comment</button> 
+                </div>
+            </div>
+            <!--RIGHT SECTION-->
+            <div class="droite">
+                <h2>Evenements à venir</h2>
+                <div class="Evennements">
+                    <p><strong>Tournoi de ping-pong</strong></p>
+                    <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\nature.jpg" alt="Nature">
+                    <p>Vendredi à 15h</p>
+                    <p><button class="bouton-info">Info</button></p>
+                    <p><button class="bouton-participer">Participer</button></p>
+                </div>
+                <div class="Evennements">
+                    <p><strong>Réunion BDE</strong></p>
+                    <img src="C:\Users\cheri\Desktop\FAC\Outil informatique\Projet\Assets\nature.jpg" alt="Nature">
+                    <p>Vendredi à 12h30</p>
+                    <p><button class="bouton-info">Info</button></p>
+                    <p><button class="bouton-participer">Participer</button></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Dau'Link</p>
+        </footer>
+    </body>
+</html>

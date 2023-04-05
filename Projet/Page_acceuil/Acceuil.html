@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- page d'acceuil du site web pour les Dauphinois --> 
+<html>
+    <head>
+        <title>Dau'Link</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Acceuil.css">
+        <script language="JavaScript" src="Acceuil.js"></script>
+    </head>
+    <body>
+        <!-- Création d'un menu horizontal avec le logo à gauche, un drop-down menu annonces, un drop-down menu Forum, une barre de recherche et un bouton profil à droite avec des puces. -->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <img src="logo.png" alt="logo" width="100" height="100">
+                </li>
+                <li>
+                    <a href="#">Annonces</a>
+                    <ul class="sous">
+                        <li><a href="#">Covoiturage</a></li>
+                        <li><a href="#">Collocation</a></li>
+                        <li><a href="#">Séssions d'étude</a></li>
+                        <li><a href="#">Vente</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Forum</a>
+                    <ul class="sous">
+                        <li><a href="#">Général</a></li>
+                        <li><a href="#">Covoiturage</a></li>
+                        <li><a href="#">Collocation</a></li>
+                        <li><a href="#">Séssions d'étude</a></li>
+                    </ul>
+                </li>
+                <!-- Création de la barre de recherche-->
+                <li>
+                    <input id="searchbar" type="text" name="search" placeholder="Rechercher...">
+                </li>
+                <!-- Création du bouton profil-->
+                <li class="deroulant">
+                    <a href="#">Profil</a>
+                    <ul class="sous">
+                        <li><a href="#">Informations personnelles</a></li>
+                        <li><a href="#">Annonces publiées</a></li>
+                        <li><a href="#">Paramètres </a></li>
+                        <li><a href="#">Déconnexion</a></li>
+                    </ul>
+                </li>
+            </ul>     
+        </nav>
+        <div class="corps">
+            <!-- Création d'une partie avec des filtres, tout à gauche. Les filtres seront des filtres pour les annonces, filtrer par date d'apparition etc... -->
+            <div class="filtres">   
+                <h1>Filtres</h1>
+                <form>
+                    <input type="checkbox" name="Plus_récent" value="Plus_récent"> Plus récent<br>
+                    <input type="checkbox" name="Moins_récent" value="Moins_récent"> Moin récent<br>
+                    <input type="checkbox" name="Evennements" value="Evennements"> Evennements<br>
+                    <input type="checkbox" name="Covoiturage" value="Covoiturage"> Covoiturage<br>
+                    <input type="checkbox" name="Collocation" value="Collocation"> Collocation<br>
+                    <input type="checkbox" name="Gratuit" value="Gratuit"> Gratuit<br>
+                    <input type="checkbox" name="payant" value="payant"> payant<br>
+                </form>
+            </div>
+            <!-- Création d'une partie avec les annonces, au centre. Les annonces seront des annonces de la base de données. -->
+            <div class="annonces">
+                <h1>Annonces</h1>
+                <p>Voici les annonces</p>
+                <!-- Création de quelques annonces temporaires pour remplir le file d'actualité-->
+                <div class="annonce1">
+                    <h2>Annonce1</h2>
+                    <p>Voici une annonce fictive</p>
+                </div>
+            </div>
+            <!-- Création d'une partie à droite pour pouvoir poster une annonce, avec des parametres tel que le type de l'annonce, une zone pour écrire et sa cathégorie. Ca sera un formulaire-->
+            <div class="poster">
+                <h1>Poster une annonce</h1>
+                <p>Choisissez le type de votre annonce</p>
+                <form>
+                    <input type="radio" name="type" value="Demande"> Demande<br>
+                    <input type="radio" name="type" value="Offre"> Offre<br>
+                    <input type="radio" name="type" value="Demande et Offre"> Demande et Offre<br>
+                    <p>Choisissez la catégorie de votre annonce</p>
+                    <input type="radio" name="Collocation" value="Collocation"> Collocation<br>
+                    <input type="radio" name="Covoiturage" value="Covoiturage"> Covoiturage<br>
+                    <input type="radio" name="Session_etude" value="Session_etude"> Séssion d'étude<br>
+                    <input type="radio" name="Vente" value="Vente"> Vente<br>
+                </form>
+                <p>Écrivez votre annonce</p>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <p><input type="submit" value="Poster"></p>
+            </div>
+        </div>
+    </body> 
+    
